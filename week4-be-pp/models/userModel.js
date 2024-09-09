@@ -48,15 +48,25 @@ const updateOneById = (id, updatedData) => {
     if (updatedData.name) {
       user.name = updatedData.name;
     }
-    if (updatedData.info) {
-      user.info = updatedData.info;
+    if (updatedData.email) {
+      user.email = updatedData.email;
     }
-    if (updatedData.image) {
-      user.image = updatedData.image;
+    if (updatedData.password) {
+      user.password = updatedData.password;
     }
-    if (updatedData.price) {
-      user.price = updatedData.price;
+    if (updatedData.phone_number) {
+      user.phone_number = updatedData.phone_number;
     }
+    if (updatedData.gender) {
+      user.gender = updatedData.gender;
+    }
+    if (updatedData.date_of_birth) {
+      user.date_of_birth = updatedData.date_of_birth;
+    }
+    if (updatedData.membership_status) {
+      user.membership_status = updatedData.membership_status;
+    }
+
     return user;
   }
   return false;
